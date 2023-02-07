@@ -5,18 +5,29 @@
         @vite('resources/css/app.css')
     </head>
     <body>
-        <main class="flex gap-x-5 min-h-screen">
-            <aside class=" flex flex-col items-center px-7 py-5 bg-emerald-500 min-w-[275px]">
-                <div class="p-2 border-b">
-                    <x-title :text="'Меню навигации'" />
+        <header class="p-5 shadow-md flex justify-between items-center">
+            <x-title :text="'Серверное веб-программирование'" :tw="'text-black'"/>
+            <div class="flex gap-x-3">
+                <button class="bg-green-500 p-3 text-white rounded-md">Войти</button>
+                <button>Зарегистрироваться</button>
+            </div>
+        </header>
+        <main class="flex min-h-screen">
+            <aside class="flex flex-col gap-y-5 px-7 py-5 min-w-[265px] shadow-md">
+                <div>
+                    <x-title :text="'Меню навигации'" :tw="'p-2 border-b text-center'"/>
                 </div>
+                <nav class="flex flex-col gap-y-3">
+                    <a href="/" class="text-lg underline">Главная</a>
+                    <a href="/about" class="text-lg underline">Об авторе</a>
+                </nav>
             </aside>
             <section>
                 {{ $slot }}
             </section>
         </main>
-        <footer class="p-5">
-            <h1>footer</h1>
+        <footer class="p-5 flex items-center justify-center">
+            <h1>&copy; 2023</h1>
         </footer>
     </body>
 </html>

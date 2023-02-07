@@ -13,10 +13,12 @@ class Title extends Component
      */
 
     public $text;
+    public $tw;
 
-    public function __construct($text)
+    public function __construct($text, $tw)
     {
         $this->text = $text;
+        $this->tw = $tw;
     }
 
     /**
