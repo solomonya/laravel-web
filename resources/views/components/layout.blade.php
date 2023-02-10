@@ -8,7 +8,7 @@
         <header class="p-5 shadow-md flex justify-between items-center">
             <x-title :text="'Серверное веб-программирование'" :tw="'text-black'"/>
             <div class="flex gap-x-3">
-                <button class="bg-green-500 p-3 text-white rounded-md">Войти</button>
+                <button class="bg-green-600 p-3 text-white rounded-xl">Войти</button>
                 <button>Зарегистрироваться</button>
             </div>
         </header>
@@ -27,7 +27,7 @@
             </section>
         </main>
         <footer class="p-5 flex items-center justify-center">
-            <h1>&copy; 2023</h1>
+            <h1>&copy; AUPET 2023</h1>
         </footer>
     </body>
 </html>

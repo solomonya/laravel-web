@@ -1,1 +1,1 @@
-<h3 class="text-xl font-bold {{$tw}}">{{ $text }}</h3>
+<h3 class="text-xl text-orange-400 font-bold {{$tw}}">{{ $text }}</h3>
