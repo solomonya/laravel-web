@@ -20,9 +20,10 @@
                 <nav class="flex flex-col gap-y-3">
                     <a href="/" class="text-lg underline">Главная</a>
                     <a href="/about" class="text-lg underline">Об авторе</a>
+                    <a href="/articles" class="text-lg underline">Статьи</a>
                 </nav>
             </aside>
-            <section>
+            <section class="flex-1">
                 {{ $slot }}
             </section>
         </main>

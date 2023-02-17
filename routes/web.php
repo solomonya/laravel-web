@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,5 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::resource('articles', ArticleController::class);
