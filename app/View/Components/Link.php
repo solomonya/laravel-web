@@ -13,12 +13,10 @@ class Link extends Component
      */
 
     public $href;
-    public $title;
 
-    public function __construct($href, $title)
+    public function __construct($href)
     {
         $this->href = $href;
-        $this->title = $title;
     }
 
     /**

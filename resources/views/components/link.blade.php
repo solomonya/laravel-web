@@ -1,1 +1,3 @@
-<a href="{{$href}}" class="text-sky-600">{{$title}}</a>
+<a href="{{$href}}">
+    {{ $slot }}
+</a>
