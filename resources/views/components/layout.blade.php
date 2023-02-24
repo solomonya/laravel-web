@@ -18,9 +18,16 @@
                     <x-title :text="'Меню навигации'" :tw="'p-2 border-b text-center'"/>
                 </div>
                 <nav class="flex flex-col gap-y-3">
-                    <a href="/" class="text-lg underline">Главная</a>
-                    <a href="/about" class="text-lg underline">Об авторе</a>
-                    <a href="/articles" class="text-lg underline">Статьи</a>
+                    @foreach ([
+                            array('href' => '/', 'title' => 'Главная'),
+                            array('href' => '/about', 'title' => 'О себе'),
+                            array('href' => '/articles', 'title' => 'Статьи'),
+                            array('href' => '/comments', 'title' => 'Гостевая книга')
+                          ] as $link)
+                            <x-link :href="$link['href']">
+                                <span class="text-indigo-500">{{$link['title']}}</span>
+                            </x-link>
+                    @endforeach 
                 </nav>
             </aside>
             <section class="flex-1">
